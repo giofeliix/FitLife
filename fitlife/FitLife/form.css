@@ -1,0 +1,96 @@
+:root{
+    --preto-fonte-principal: #000000;
+    --verde: #25995c;
+    --verde-secundario: #3FA654;
+    --branco: #ffffff;
+    --tamanho-titulo: 24px;
+    --tamanho-subtitulo: 20px;
+    --font-titulo: Anton, san-serif;
+    --font-subtitulo: helvetica, san-serif;
+}
+
+.principal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro-form{
+    width: 35vw;
+    margin-left: 2em;
+}
+
+.titulo-texto{
+    color: var(--verde);
+    font-size: var(--tamanho-titulo);
+    font-family: var(--font-titulo);
+    padding: 1em 0 1em 0;
+}
+
+.subtitulo-texto{
+    color: var(--preto-fonte-principal);
+    font-size: var(--tamanho-subtitulo);
+    font-family: var(--font-subtitulo);
+    padding-bottom:1em;
+}
+
+.subtitulo-texto__enfase{
+    font-weight: bold;
+}
+
+.paragrafo-texto{
+    color: var(--verde-secundario);
+    padding-bottom: 1em;
+}
+
+.descricao{
+    color: var(--preto-fonte-principal);
+    margin-top: 0.5em;
+}
+
+.formulario{
+    width: 35vw;
+    display: flex;
+    flex-flow: wrap;
+    margin-left: 2em;
+ }
+
+.form_completo {
+    padding: 2em;
+    display: inline-block;
+} 
+
+.campo{
+    padding: 0.5em;
+    width: 10vw;
+    margin: 0.5em 1em 0 1em;
+    display: grid;
+}
+
+.campo-form{
+    margin-top: 0.5em;
+}
+
+.calcularImc{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+#botao{
+    height: 3em;
+    display: flex;
+    vertical-align: bottom;    
+}
+
+#outImc, #participarPrograma, #outProposta {
+    color: green;
+    font-size: 1em;
+    margin-top: 2em;
+    display: flexbox;
+    width: 35vw;
+}
+
+#img_mulher{
+    width: 30em;
+}

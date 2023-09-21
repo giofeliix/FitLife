@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitLife</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="form.css">
+
+    <!--Código da fonte do titulo-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header class="cabecalho">
+
+        <div class="primeira-barra">
+            <div class="intro">
+                <img src="./img/balao.png" alt="Bem vindo!" class="intro__balao">
+                <h2 class="intro__mensagem">Seja bem vindo(a) visitante!</h2>
+            </div>
+
+            <div class="primeira-barra2">
+                <ul class="perfil-carrinho">
+                        <li class="intro2__item"><a href="#" class="intro2__link"><img src="./img/perfil.png" alt="Meu perfil" class="intro__perfil-carrinho">
+                        <p class="intro2__descricao">Meu perfil</p></a></li>
+                
+                        <li class="intro2__item"><a href="#" class="intro2__link"><img src="./img/carrinho.png" alt="Carrinho de Compras" class="intro__perfil-carrinho">
+                        <p class="intro2__descricao">Carrinho de compras</p></a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <h1><img src="./img/logo.png" alt="Logotipo FitLife" class="logotipo"></h1>
+
+        <div class="menu">
+            <ul class="lista-principal">
+                <li class="lista-principal__item">
+                    <a href="#" class="lista-principal__link">Produtos</a>
+                </li>
+                <li class="lista-principal__item">
+                    <a href="#" class="lista-principal__link">Dicas</a>
+                </li>
+                <li class="lista-principal__item">
+                    <a href="#" class="lista-principal__link">O personal</a>
+                </li>
+                <li class="lista-principal__item">
+                    <a href="#" class="lista-principal__link">Seja FitLife</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="principal">
+    <div class="form_completo">
+        <div class="intro-form">
+
+        <h2 class="titulo-texto">Quer saber o que precisa para entrar na FitLife?</h2>
+
+        <h3 class="subtitulo-texto">Então, deixa a gente te conhecer melhor!</h3>
+
+        <p class="paragrafo-texto">Descubra seu imc, quantidade de calorias que você deve ingerir por dia para emagrescer, manter ou ganhar peso, preenchendo o formulario abaixo.</p>
+
+        <h3 class="subtitulo-texto subtitulo-texto__enfase">Atenção!</h3>
+        <h3 class="subtitulo-texto">Fique tranquilo, <span class="subtitulo-texto__enfase">NÃO</span> cobraremos nada de você por essas informações.</h3>
+
+         </div>
+
+        <form class="formulario">
+            
+            <div class="campo-form">
+                <label for="nome" class="descricao">Nome:</label>
+                <input type="text" name="nome" placeholder="Qual seu nome?" class="campo" id="nome">
+            </div>
+
+            <div class="campo-form">
+                <label for="idade" class="descricao">Idade:</label>
+                <input type="text" name="idade" placeholder="Qual sua idade?" class="campo">
+            </div>
+            
+            <div class="campo-form">
+                <label for="peso" class="descricao">Peso:</label>
+                <input type="text" name="peso" placeholder="Qual o seu peso?" class="campo" id="peso">
+            </div>
+
+            <div class="campo-form">
+                <label for="altura" class="descricao">Altura:</label>
+                <input type="text" name="altura" placeholder="Qual a sua altura?" class="campo" id="altura">
+            </div>
+            <div class="calcularImc">
+                <input type="button" value="Calcule!" id="botao">
+                </div>
+
+            <div><p>Email: <input type="text" value="Email" id="inEmail" class="formSobre"></p>
+            <p>Sobre Mim: <input type="text" value="Me fale sobre você!" id="inSobre" class="formSobre"></p>
+            <input type="button" value="Enviar!" id="btEnviar" class="formSobre">
+            </div>    
+            <h3 id="outImc" class="subtitulo-texto"></h3>
+            <p id="outProposta"></p>
+            <p id="participarPrograma"></p>
+
+            <input type="button" value="Participar do Programa!" id="btParticiparPrograma" hidden>
+        </form>
+        </div>
+
+        <img src="img/moca_fit.png" alt="Participante do Programa" id="img_mulher">
+            
+
+    </section>
+
+    <script src="./calcularImc.js">
+
+    </script>
+    <script src="/functionForm.js"></script>
+    </body>
+
+</html>

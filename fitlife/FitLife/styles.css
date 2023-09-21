@@ -1,0 +1,99 @@
+:root{
+    --preto-fonte-principal: #000000;
+    --verde: #25995c;
+    --branco: #ffffff;
+    
+}
+
+body {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--branco);
+}
+
+.cabecalho {
+    background: black;
+    text-align: center;
+}
+
+.logotipo {
+    width: 25%;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+}
+
+.lista-principal {
+    display: flex;
+    padding: 1em;
+}
+
+.lista-principal__item {
+    padding: 1em 2em 1em 2em;
+    border: 1px solid #25995c;
+    margin: 0 0.5em 0 0.5em;
+    border-radius: 5px;
+}
+
+.lista-principal__item:hover{
+    transform: scale(1.1);
+}
+
+.lista-principal__link {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.primeira-barra {
+    display: flex;
+    align-items: center;
+    padding: 1em;
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+}
+
+.intro__balao {
+    width: 3%;
+    padding-right: 0.5em;
+}
+
+.perfil-carrinho{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.intro2__item{
+    width: 18%;
+}
+
+.intro__perfil-carrinho{
+    width: 11%;
+}
+
+.intro2__link{
+    text-decoration: none;
+    color: #ffffff;
+    
+}
+
+.intro2__descricao{
+    margin-top: 0.4em;
+}
+
+.formSobre{
+    display: none;
+}
+
+#outProposta{
+    color: var(--verde);
+}
+
+#btParticiparPrograma{
+    padding: 1em;
+    margin: 2em;
+}
